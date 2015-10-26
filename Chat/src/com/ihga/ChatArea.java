@@ -27,6 +27,7 @@ public class ChatArea extends JPanel implements KeyListener{
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		textArea.setLineWrap(true);
+		textArea.setFont(textArea.getFont().deriveFont(0, 15));
 		DefaultCaret caret = (DefaultCaret) textArea.getCaret();
 		caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 		
